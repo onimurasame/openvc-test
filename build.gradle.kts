@@ -11,13 +11,12 @@ version = "1.0-SNAPSHOT"
 
 repositories {
     mavenCentral()
-    maven (url = "http://clojars.org/repo")
+    maven(url = "http://clojars.org/repo")
 }
 
 dependencies {
     compile(kotlin("stdlib-jdk8"))
     compile("org.openpnp:opencv:3.2.0-1")
-    compile("org.springframework:spring-context:5.1.4.RELEASE")
 }
 
 tasks.withType<KotlinCompile> {
@@ -29,5 +28,5 @@ application {
 }
 
 javafx {
-    modules = listOf("javafx.controls", "javafx.graphics")
+    modules = listOf("javafx.controls", "javafx.graphics", "javafx.swing")
 }
